@@ -87,6 +87,70 @@
                 <h1>Monedas</h1>
                 <hr>
                 <div class="row">
+                    <div class="col-md-12" align="center">
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <button class="btn btn-default btn_billete" ng-click="selectBillete('mil')">
+                                        Mil 1000
+                                    </button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-default btn_billete" ng-click="selectBillete('dosmil')">
+                                        Quinientos 500
+                                    </button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-default btn_billete" ng-click="selectBillete('cincomil')">
+                                        Doscientos 200
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row margin-top-10">
+                                <div class="col-md-4">
+                                    <button class="btn btn-default btn_billete" ng-click="selectBillete('diezmil')">
+                                        Cien 100
+                                    </button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-default btn_billete" ng-click="selectBillete('veintemil')">
+                                        Cincuenta 50
+                                    </button>
+                                <div class="row margin-top-10">
+                                <div ng-model="val_selected">{{val_selected}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="rs">{{total}}</div>    
+                    </div>
+                    <div class="col-md-6">
+                       <div class="row">
+                           <div class="col-md-4">
+                               Cantidad
+                           </div>
+                           <div class="col-md-8">
+                                <div class="actions__money">
+                                    <input type="number" placeholder="Cantidad de billetes" id="txt_billetes" ng-model="cantidad" ng-change="calcular()">
+                                </div>
+                           </div>
+                       </div>
+                       <div class="row margin-top-10">
+                           <div class="col-md-12" align="center">
+                              <button class="btn btn-success" ng-click="calcular()">
+                                   Calcular
+                               </button>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <hr>
+                <div class="row">
                     <div class="col-md-12">
                         
                     </div>
